@@ -36,7 +36,6 @@ def day_2():
     step = 0
     for i in range(len(input_lines)//3):
         group = input_lines[step:step+3]
-        print(i, step, group)
         unique_char = find_unique_character(*group)
 
         priority_sum += convert_to_priority(unique_char)
